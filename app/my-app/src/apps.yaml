@@ -1,9 +1,0 @@
-apps:
-  sonarr:
-    name: sonarr
-    url: sonarr.jbpixel.xyz
-    description: "automate series"
-  dashboard:
-    name: Flame
-    url: dashboard.jbpixel.xyz
-    description: "personal dashboard"

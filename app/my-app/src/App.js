@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import "./App.css";
 import { greeting, date } from "./dynamics.js";
 import { box } from "./boxapp.js";
-import { tick } from "./clock.js";
-import { randomNumberElement } from "./dynamicTest.js";
+import Clock from "./clock.js";
+//import { randomNumberElement } from "./dynamicTest.js";
+import AppsFrame from './appGrid';
 
 function App() {
   return (
@@ -12,13 +12,13 @@ function App() {
       <div className="header">
         {greeting()}
         {date()}
-        <div id="clock"></div>
+        <Clock/>
       </div>
 
-      <div className="boxes" id="boxes">
-        {box("Dashboard", "https://dashboard.jbpixel.xyz", "LOREM IPSUM")}
-        {box("Sonarr", "https://sonarr.jbpixel.xyz", "LOREM IPSUM")}
+      <div className="apps" id="boxes">
+      <AppsFrame/>
       </div>
+      
       <div id="test"></div>
     </div>
   );

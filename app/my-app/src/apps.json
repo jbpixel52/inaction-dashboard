@@ -1,0 +1,14 @@
+{
+  "apps": [
+    
+     {"name": "sonarr",
+      "url": "http://sonarr.jbpixel.xyz",
+      "description": "automate series"}
+  ,
+    {
+      "name": "Flame",
+      "url": "dashboard.jbpixel.xyz",
+      "description": "personal dashboard"
+    }
+  ]
+}

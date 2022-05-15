@@ -1,10 +1,35 @@
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
+class Clock extends Component {
+  constructor(props) {
+    super(props);
+    //This declared the state of time at the very beginning
+    this.state = {
+      time: new Date().toLocaleTimeString(),
+    };
+  }
 
-const root = ReactDOM.createRoot(document.getElementById("clock"));
+  //This happens when the component mount and the setInterval function get called with a call back function updateClock()
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.updateClock(), 1000);
+  }
 
-export default function tick() {
-  const element = <h2>It is {new Date().toLocaleTimeString()}.</h2>;
-  root.render(element);
+  //This section clears setInterval by calling intervalID so as to optimise memory
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+
+  //This function set the state of the time to a new time
+  updateClock() {
+    this.setState({
+      time: new Date().toLocaleTimeString(),
+    });
+  }
+  render() {
+    return (
+      <div className="Time">
+        <p> {this.state.time}</p>
+      </div>
+    );
+  }
 }
-setInterval(tick, 1000);
-
+export default Clock;
