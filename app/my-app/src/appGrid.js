@@ -1,31 +1,23 @@
 import React, { Component } from "react";
 
-import box from "./boxapp";
+import Box from "./boxapp";
 import data from "./apps.json";
 
 export default class AppsFrame extends Component {
+  constructor() {
+    super();
+    this.data = data;
+    this.boxes = this.data.apps.map((item, i) => (
+      <Box
+        appname={item.name}
+        appurl={item.url}
+        description={item.description}
+          
+        />
+    ));
+    this.elements = this.boxes.copyWithin();
+  }
   render() {
-    return (
-      <div>
-        {data.apps.map((item, i) => (
-          <a href={item.url} class="app">
-            <p>{String(item.name)}</p>
-            <div>
-              <div class="description">{item.description}</div>
-            </div>
-          </a>
-        ))}
-      </div>
-    );
+    return <div>{this.elements}</div>;
   }
 }
-
-// function yamlParser(path) {
-//   try {
-//     const doc = yaml.load(fs.readFileSync(path, "utf8"));
-//     console.log(doc);
-//     return doc
-//   } catch (e) {
-//     console.log(e);
-//   }
-// }
