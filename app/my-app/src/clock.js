@@ -27,7 +27,7 @@ class Clock extends Component {
   render() {
     return (
       <div className="Time">
-        <p> {this.state.time}</p>
+        {this.state.time}
       </div>
     );
   }

@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App" id="root">
       <div className="header">
-        {greeting()}
         {date()}
+        {greeting()}
         <Clock/>
       </div>
 

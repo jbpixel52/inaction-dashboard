@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
@@ -11,8 +13,24 @@ body{
   color: black;
 }
 @font-face {
-  font-family: Antiseptic;
-  src: url(Antiseptic-Rounded.otf);
+  font-family: Sinistre;
+  src: url(./fonts/Sinistre-StCaroline.woff);
+}
+#Time{
+  font-family:Sinistre ;
+  
+}
+.header{
+  display:flex;
+  font-family: Sinistre;
+  font-variant-ligatures: additional-ligatures; 
+  flex: content;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: center;
+  margin:auto;
+  column-gap:20vw ;
+  align-items: center;
 }
 .app{
     /* App Card */
@@ -26,8 +44,8 @@ padding: 1%;
 gap: 1%;
 font-size:1em;
 position: relative;
-width: 50vw;
-height: 10vw;
+width: fit-content;
+height: fit-content;
 overflow: hidden;
 color:white;
 background-color: rgba(20,20,20, 0.4);
@@ -47,10 +65,11 @@ gap: 1%;
 flex-direction: row;
 flex-wrap: wrap;
 align-items:flex-start;
+justify-content: center;
 padding:1%;
 position:relative;
-width: 100vw;
-height:100vw;
+width: 75vw;
+height:30vw;
 
 border: 4px solid #000000;
 box-shadow: 4px 4px 0px #000000;
