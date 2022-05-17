@@ -13,19 +13,20 @@ function box(appname, appurl, description) {
 }
 
 export default class Box extends Component {
-  constructor(appname, appurl, description) {
+  constructor(props) {
     super();
-    this.appname = appname;
-    this.appurl = appurl;
-    this.description = description;
+    this.appname = props.appname;
+    this.appurl = props.appurl;
+    this.description = props.description;
+    console.log(props.appname)
   }
-
   render() {
+   
     return (
       <a href={this.url} className="app">
-        <p>{String(this.appname)}</p>
+        <p>{this.appname}</p>
         <div>
-          <div className="description">{this.description}</div>
+          <div className="description">{JSON.stringify(this.description)}</div>
         </div>
       </a>
     );
