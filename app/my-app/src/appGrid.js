@@ -18,6 +18,6 @@ export default class AppsFrame extends Component {
     this.elements = this.boxes.copyWithin();
   }
   render() {
-    return <div>{this.elements}</div>;
+    return <div className="apps">{this.elements}</div>;
   }
 }

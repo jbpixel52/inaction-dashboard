@@ -1,25 +1,24 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
 import { greeting, date } from "./dynamics.js";
-import { box } from "./boxapp.js";
 import Clock from "./clock.js";
-//import { randomNumberElement } from "./dynamicTest.js";
-import AppsFrame from './appGrid';
+import AppsFrame from "./appGrid";
+import { useState } from "react";
 
 function App() {
+  const [width, setWindowWidth] = useState(0);
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
   return (
     <div className="App" id="root">
       <div className="header">
-        {date()}
         {greeting()}
-        <Clock/>
+        {date()}
       </div>
 
-      <div className="apps" id="boxes">
-      <AppsFrame/>
-      </div>
-      
-      <div id="test"></div>
+      <AppsFrame />
     </div>
   );
 }
