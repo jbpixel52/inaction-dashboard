@@ -9,7 +9,7 @@ export default function SearchBox() {
   let search = (
     <input
       onKeyPress={(e) => {
-        if (e.key === "Enter") {
+        if (e.key === "Enter" && e.target.value.length > 0) {
           console.log("pressed ENTER");
           window.location.href = searchFunc(query);
         }
