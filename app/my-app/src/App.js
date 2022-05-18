@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App" id="root">
     <div classn></div>
-      <div className="header">{greeting()}{SearchBox()}</div>
+      <div className="header"><h1>{SearchBox()}</h1></div>
       <div>{AppsFrame()}</div>
     
     </div>
