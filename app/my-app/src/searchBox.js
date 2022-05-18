@@ -25,5 +25,5 @@ export default function SearchBox() {
 }
 
 function searchFunc(query) {
-  return "https://google.com/search?q=" + "query";
+  return "https://google.com/search?q=" + query;
 }
