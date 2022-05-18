@@ -19,6 +19,11 @@
       "name":"Plex",
       "url":"plex.tv",
       "description":"Media Server"
+    },
+    {
+      "name":"tautulli",
+      "url":"http://tautulli.jbpixel.xyz",
+      "description":"Monitor Plex status and stats."
     }
 
   ]
