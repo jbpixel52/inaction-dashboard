@@ -1,4 +1,4 @@
 import { useState } from "react";
 export default function settings() {
-return (<span class="material-symbols-outlined">settings</span>)
+return (<span id="settings-icon" className="material-symbols-outlined"><a href="settings" id='settings-icon'>settings</a></span>)
 }

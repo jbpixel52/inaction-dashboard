@@ -66,21 +66,27 @@ body {
 .searchbar::placeholder{
   color: white;
 }
+#settings-icon{
+  color: white;
+  text-decoration: none;  
+}
+#settings-icon:hover{
+  animation-duration: 0.4s;
+  animation-name: zoomin;
+  animation-fill-mode: forwards;
+}
 .app {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.5em;
   font-size: 1em;
-  position: relative;
-  width: max-content;
-  height: max-content;
+  width:fit-content;
+  height: fit-content;
+  padding: 0.5rem;
   align-content: space-between;
   overflow: hidden;
   color: white;
-  background-color: rgba(20, 20, 20, 0.2);
-  border: 0px solid #000000;
-  box-shadow: 0em 0.2em 0.5em #000000;
+  /* border: 0px solid #000000; */
   border-radius: 1em;
   margin:auto;
   text-decoration: none;
@@ -130,11 +136,8 @@ body {
   height: 80vh;
   box-shadow: 0em 0.2em 0.5em #000000;
   border-radius: 1em;
-  gap:4rem;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
+  flex-flow: column wrap;
+  gap: 5rem;
   
 }
 

@@ -12,8 +12,8 @@ export default function box(appname, appurl, description) {
         <p className="appName">{appname}</p>
         <div className="description">{description}</div>
       </div>
-      <svg width="1rem" height="1rem">
-      <circle cx="0.5rem" cy="0.5rem" r="0.4rem" stroke="black" stroke-width="3" fill={isOnline(appurl)} />
+      <svg width="1.5rem" height="1.5rem">
+      <circle cx="0.75rem" cy="0.75rem" r="0.6rem" stroke="black" stroke-width="0.2rem" fill={isOnline(appurl)} />
       </svg>
     </a>
   );
