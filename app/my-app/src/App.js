@@ -14,7 +14,7 @@ function App() {
       {Home()}
               <h1>{SearchBox()}</h1>
         {Settings()}
-      </div>
+            </div>
       <div>{AppsFrame()}</div>
     </div>
   );

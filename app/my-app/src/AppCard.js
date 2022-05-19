@@ -1,5 +1,8 @@
+import React, { lazy } from 'react';
+
 import getIcon from "./icon_extraction";
 import isOnline from "./isOnline";
+
 export default function box(appname, appurl, description) {
   const appbox = (
     <a href={appurl} className="app">
