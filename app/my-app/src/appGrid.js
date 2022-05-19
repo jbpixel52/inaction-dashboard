@@ -1,5 +1,5 @@
 
-import box from "./boxapp";
+import box from "./AppCard";
 import data from "./apps.json";
 
 // export default class AppsFrame extends Component {

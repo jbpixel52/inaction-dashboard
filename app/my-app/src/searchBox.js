@@ -3,9 +3,7 @@ import { useState } from "react";
 
 export default function SearchBox() {
   const [query, setQuery] = useState();
-  function handleChange(event) {
-    console.log(event.target.value);
-  }
+
   let search = (
     <input
       onKeyPress={(e) => {

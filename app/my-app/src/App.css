@@ -29,6 +29,7 @@ body {
 }
 
 .header {
+  text-align: center;
   display: flex;
   font-family: Sinistre;
   font-variant-ligatures: additional-ligatures;
@@ -36,7 +37,7 @@ body {
   flex: content;
   flex-direction: row;
   flex-flow: row;
-  justify-content:baseline;
+  justify-content:center;
   padding-left: 2rem;
   margin: auto;
   column-gap: 5vmin;
@@ -61,10 +62,15 @@ body {
   border-radius: 5rem;
   box-shadow: 0em 0.2em 0.5em #000000;
   border-radius: 1em;
+  text-align: center;
 
 }
 .searchbar::placeholder{
   color: white;
+  text-align: center;
+}
+.searchbar::-ms-value{
+  text-align: center;
 }
 #settings-icon{
   color: white;
