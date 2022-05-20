@@ -17,7 +17,10 @@ body {
   height: 100vh;
   color: black;
 }
-
+@font-face {
+  font-family: BluNext;
+  src: url(./fonts/BluuNext-Bold.otf);
+}
 @font-face {
   font-family: Sinistre;
   src: url(./fonts/Sinistre-StCaroline.woff);
@@ -45,7 +48,7 @@ body {
   width: 80vw;
 }
 .searchbar{
-  font-family: Sinistre;
+  font-family: BluNext;
   font-size: 2rem;
   font-weight: bold;
   justify-content: center;
@@ -76,11 +79,7 @@ body {
   color: white;
   text-decoration: none;  
 }
-#settings-icon:hover{
-  animation-duration: 0.4s;
-  animation-name: zoomin;
-  animation-fill-mode: forwards;
-}
+
 .app {
   display: flex;
   flex-direction: row;
@@ -88,9 +87,9 @@ body {
   font-size: 1em;
   width:fit-content;
   height: fit-content;
-  padding: 0.5rem;
   align-content: space-between;
-  overflow: hidden;
+  overflow-wrap: normal;
+  
   color: white;
   /* border: 0px solid #000000; */
   border-radius: 1em;
@@ -98,30 +97,13 @@ body {
   text-decoration: none;
 
 }
-
-.appTitleRow {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-}
-
-.appName {
-  font-size: 3vh;
-  text-decoration: none;
-}
-
-.description {
-  font-size: 1.5vh;
-  text-decoration: none;
-}
-.ProfileGraphic{
-  width: auto;
-  height: auto;
-}
-.app:hover {
-  animation-duration: 0.4s;
-  animation-name: zoomin;
-  animation-fill-mode: forwards;
+.basicApp {
+  width: 451px;
+  height: 470px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  border-radius: 24px;
 }
 
 @keyframes zoomin {
@@ -130,11 +112,19 @@ body {
   }
 
   to {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 
+@keyframes zoomintest {
+  from {
+    transform: scale(1)
+  }
 
+  to {
+    transform: scale(2);
+  }
+}
 .appTitle {
   font-family: Antiseptic;
 }
@@ -154,4 +144,7 @@ body {
   object-fit: scale-down;
   width: 3em;
   height: 3em;
+}
+.material-symbols-outlined{
+  color: white;
 }
