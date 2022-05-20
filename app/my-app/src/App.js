@@ -11,10 +11,10 @@ function App() {
     <div className="App" id="root">
       <div classn></div>
       <div className="header">
-      {Home()}
-              <h1>{SearchBox()}</h1>
+        {Home()}
+        <h1>{SearchBox()}</h1>
         {Settings()}
-            </div>
+      </div>
       <div>{AppsFrame()}</div>
     </div>
   );

@@ -9,8 +9,8 @@
 }
 
 body {
-  backdrop-filter: blur(15px);
-  background-image: url('https://images.unsplash.com/photo-1548350896-fafc317d3ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=5');
+  backdrop-filter: blur(11px);
+  background-image: url('./images/purple-crystals-particles.jpeg');
   background-size: cover;
   background-blend-mode: multiply;
   width: 100vw;
@@ -114,7 +114,10 @@ body {
   font-size: 1.5vh;
   text-decoration: none;
 }
-
+.ProfileGraphic{
+  width: auto;
+  height: auto;
+}
 .app:hover {
   animation-duration: 0.4s;
   animation-name: zoomin;
