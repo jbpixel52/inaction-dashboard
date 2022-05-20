@@ -1,4 +1,4 @@
-import { greeting } from "./dynamics";
+import { greeting } from "../../utils/dynamics";
 import { useState } from "react";
 
 export default function SearchBox() {

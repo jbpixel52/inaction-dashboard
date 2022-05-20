@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import AppsFrame from "./appGrid";
-import DynamicIcon from "./DynamicIcon";
-import Home from "./home";
-import SearchBox from "./searchBox";
+import AppsFrame from "./components/ResponsiveGrid/appGrid";
+import DynamicIcon from "./components/icons/DynamicIcon";
+import Home from "./components/icons/home";
+import SearchBox from "./components/searchbar/searchBox";
 
 function App() {
   return (

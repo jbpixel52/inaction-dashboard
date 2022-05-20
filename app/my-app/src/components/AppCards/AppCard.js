@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
-import getIcon from "./icon_extraction";
-import isOnline from "./isOnline";
+import getIcon from "../../utils/icon_extraction";
+import isOnline from "../icons/isOnline";
 
 export default function box(appname, appurl, description) {
   const appbox = (

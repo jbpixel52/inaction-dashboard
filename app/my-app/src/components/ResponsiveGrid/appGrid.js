@@ -1,6 +1,6 @@
 
-import box from "./AppCard";
-import data from "./apps.json";
+import box from "../AppCards/AppCard";
+import data from "../../apps.json";
 
 // export default class AppsFrame extends Component {
 //   constructor() {

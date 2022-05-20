@@ -130,6 +130,7 @@ body {
 }
 
 .apps {
+  
   display: flex;
   width: 95vw;
   height: 80vh;
