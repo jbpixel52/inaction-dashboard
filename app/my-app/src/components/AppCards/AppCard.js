@@ -8,12 +8,13 @@ export default function AppCard(appname, appurl, description) {
     <div className="card-base">
       <div className="rows">
         <div className="nav-tab">
-          <div className="columns">Simple</div>
-          <div className="columns">Extended</div>
-          <div className="columns">Debug</div>
+          <button className="columns">Simple</button>
+          <button className="columns">Extended</button>
+          <button className="columns">Debug</button>
 
-          <hr></hr>
+          
         </div>
+        <hr></hr>
         <div className="header-row">
         <img
             src={getIcon(appname.toLowerCase())}

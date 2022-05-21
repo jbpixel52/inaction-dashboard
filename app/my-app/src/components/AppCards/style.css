@@ -1,26 +1,64 @@
+@font-face {
+  font-family: BluNext;
+  src: url(../../fonts/BluuNext-Bold.otf);
+}
+@font-face {
+  font-family: Sinistre;
+  src: url(../../fonts/Sinistre-StCaroline.woff);
+}
+@font-face {
+  font-family: Brass;
+  src: url(../../fonts/BrassMonoRegular-o2Yz.otf);
+}
+@font-face {
+  font-family: Fog;
+  src: url(../../fonts/FogSans-Re46.otf);
+}
+.columns{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  color: white;
+  font-family: Fog;
+}
 .nav-tab{
   display: flex;
   flex-direction: row;
   gap: 1em;
-  padding: 0.5em;
+  align-items: center;
+  justify-content: space-around;
 }
 .header-row{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 .card-base {display: flex;
+  color: white;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
   width: fit-content;
   height: fit-content;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
-
-  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow:0.25em 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.377);
+  background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
-  border-radius: 24px;
+  font-family: Fog;
+  border-radius: 1em;
+  padding: 0.5rem;
 }
 .title-div{
   display: flex;
   flex-direction:row ;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.app-title{
+  font-family: BluNext;
+  
 }
 .app-icon {
   object-fit: scale-down;
