@@ -1,24 +1,45 @@
-import React, { lazy } from 'react';
+import React from "react";
 
 import getIcon from "../../utils/icon_extraction";
-import isOnline from "../icons/isOnline";
+import isOnline from "../../utils/isOnline";
+import "./style.css";
+export default function AppCard(appname, appurl, description) {
+  const Card = (
+    <div className="card-base">
+      <div className="rows">
+        <div className="nav-tab">
+          <div className="columns">Simple</div>
+          <div className="columns">Extended</div>
+          <div className="columns">Debug</div>
 
-export default function box(appname, appurl, description) {
-  const appbox = (
-    <a href={appurl} className="app">
-      <img
-        src={getIcon(appname.toLowerCase())}
-        alt="../public/favicon.ico"
-        className="icons"
-      ></img>
-      <div className="appTitleRow">
-        <p className="appName">{appname}</p>
-        <div className="description">{description}</div>
+          <hr></hr>
+        </div>
+        <div className="header-row">
+        <img
+            src={getIcon(appname.toLowerCase())}
+            alt="../public/favicon.ico"
+            className="app-icon"
+          ></img>
+          <div className="title-body">
+            <div className="title-div">
+              <p className="app-title">{appname}</p>
+              <svg width="1.5rem" height="1.5rem">
+                <circle
+                  cx="0.75rem"
+                  cy="0.75rem"
+                  r="0.6rem"
+                  stroke="black"
+                  stroke-width="0.2rem"
+                  fill={isOnline(appurl)}
+                />
+              </svg>
+            </div>
+            <p className="app-description">{description}</p>
+          </div>
+        </div>
       </div>
-      <svg width="1.5rem" height="1.5rem">
-      <circle cx="0.75rem" cy="0.75rem" r="0.6rem" stroke="black" stroke-width="0.2rem" fill={isOnline(appurl)} />
-      </svg>
-    </a>
+    </div>
   );
-  return appbox;
+  return Card;
+  // return appbox;
 }

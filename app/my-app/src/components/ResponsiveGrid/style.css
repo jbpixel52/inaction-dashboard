@@ -1,0 +1,12 @@
+
+.apps {
+  
+    display: flex;
+    width: 95vw;
+    height: 80vh;
+    box-shadow: 0em 0.2em 0.5em #000000;
+    border-radius: 1em;
+    flex-flow: column wrap;
+    gap: 5rem;
+    
+  }
