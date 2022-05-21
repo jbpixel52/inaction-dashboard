@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 export default function DynamicIcon(
   destination = "/",
@@ -7,8 +8,8 @@ export default function DynamicIcon(
 ) {
   const [iconName, setIcon] = useState(primaryIconName);
   return (
-    <div>
+    <motion.div >
       <span className="material-symbols-outlined">{iconName}</span>
-    </div>
+    </motion.div>
   );
 }

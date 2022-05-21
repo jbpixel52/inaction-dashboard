@@ -3,9 +3,14 @@ import React from "react";
 import getIcon from "../../utils/icon_extraction";
 import isOnline from "../../utils/isOnline";
 import "./style.css";
+import { motion } from "framer-motion"
+
+
+
 export default function AppCard(appname, appurl, description) {
   const Card = (
-    <div className="card-base">
+
+    <motion.div div className="card-base" animate={{ scale: 1 }} transition={{ duration: 1 }}>
       <div className="rows">
         <div className="nav-tab">
           <button className="columns">Simple</button>
@@ -39,7 +44,7 @@ export default function AppCard(appname, appurl, description) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
   return Card;
   // return appbox;
