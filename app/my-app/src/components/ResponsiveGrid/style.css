@@ -8,6 +8,8 @@
     border-radius: 1em;
     flex-flow: column wrap;
      */
+     display: flex;
+     height:fit-content;
      gap: 5rem;
     width: 100vw;     
   }
