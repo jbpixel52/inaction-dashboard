@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export default function SearchBox() {
   const [query, setQuery] = useState();
+  
+ const [inputStyle, setStyle] = useState(()=>({width:'65vw'}));
 
   let search = (
     <input
@@ -14,7 +16,8 @@ export default function SearchBox() {
       }}
       type="text"
       placeholder={greeting()}
-      onChange={(e) => setQuery(e.target.value)}
+      onChange={(e) => {setQuery(e.target.value);
+      }}
       className="searchbar"
     />
   );

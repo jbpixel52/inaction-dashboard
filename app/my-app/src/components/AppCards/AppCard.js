@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 export default function AppCard(appname, appurl, description) {
   const Card = (
 
-    <motion.div div className="card-base" animate={{ scale: 1 }} transition={{ duration: 1 }}>
+    <div div className="card-base">
       <div className="rows">
         <div className="nav-tab">
           <button className="columns">Simple</button>
@@ -44,7 +44,7 @@ export default function AppCard(appname, appurl, description) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
   return Card;
   // return appbox;
