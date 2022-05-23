@@ -3,28 +3,45 @@
     
      {"name": "sonarr",
       "url": "http://sonarr.jbpixel.xyz",
-      "description": "automate series"}
+      "description": "automate series",
+      "type":"app"}
   ,
     {
       "name": "Flame",
-      "url": "dashboard.jbpixel.xyz",
-      "description": "personal dashboard"
+      "url": "http://dashboard.jbpixel.xyz",
+      "description": "personal dashboard",
+      "type":"app"
     },
     {
       "name":"Radarr",
       "url":"https://radarr.jbpixel.xyz",
-      "description":"Automate movies"
+      "description":"Automate movies",
+      "type":"app"
     },
     {
       "name":"Plex",
-      "url":"plex.tv",
-      "description":"Media Server"
+      "url":"https://plex.tv",
+      "description":"Media Server",
+      "type":"app"
     },
     {
       "name":"tautulli",
       "url":"http://tautulli.jbpixel.xyz",
-      "description":"Monitor Plex status and stats."
-    }
+      "description":"Monitor Plex status and stats.",
+      "type":"app"
+    },
+    {
+      "name":"Google",
+      "url":"https://google.com",
+      "description":"Error testing",
+      "type":"bookmark"
+    },
+  {
+    "name":"Test",
+    "url":"https://plexy.jbpixel.xyz",
+    "description":"debug description message ..... dot",
+    "type":"bookmark"
+  }
 
   ]
 }

@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 
 
-export default function AppCard(appname, appurl, description) {
+export default function AppCard(appname, appurl, description, apptype) {
   const Card = (
 
     <div div className="card-base">
@@ -15,27 +15,24 @@ export default function AppCard(appname, appurl, description) {
         <div className="nav-tab">
           <button className="columns">Simple</button>
           <button className="columns">Extended</button>
-          <button className="columns">Debug</button>
-
-          
         </div>
         <hr></hr>
         <div className="header-row">
         <img
-            src={getIcon(appname.toLowerCase())}
-            alt="../public/favicon.ico"
+            src={getIcon(appname.toLowerCase(),apptype,appurl)}
+            alt=""
             className="app-icon"
           ></img>
           <div className="title-body">
             <div className="title-div">
               <p className="app-title">{appname}</p>
-              <svg width="1.5rem" height="1.5rem">
+              <svg width="1rem" height="1rem">
                 <circle
-                  cx="0.75rem"
-                  cy="0.75rem"
-                  r="0.6rem"
+                  cx="0.5rem"
+                  cy="0.5rem"
+                  r="0.4rem"
                   stroke="black"
-                  stroke-width="0.2rem"
+                  stroke-width="0.1rem"
                   fill={isOnline(appurl)}
                 />
               </svg>

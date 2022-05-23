@@ -1,15 +1,24 @@
-.apps {
-
-  /* display: flex;
-    width: 95vw;
-    height: 80vh;
-    box-shadow: 0em 0.2em 0.5em #000000;
-    border-radius: 1em;
-    flex-flow: column wrap;
-     */
+.AppGrid {
   display: grid;
-  justify-content: center;    
-  grid-column: auto;
-  grid-template-columns: repeat(auto-fit, minmax(calc(100vh/4), 1fr));
-  color: white;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 430px) {
+  .AppGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 670px) {
+  .AppGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .AppGrid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 5em;
+    margin-left: 5em;
+  }
 }
