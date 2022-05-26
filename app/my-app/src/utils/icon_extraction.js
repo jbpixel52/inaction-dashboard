@@ -15,5 +15,5 @@ export default function getIcon(appname, apptype, appurl) {
       ".png"
     );
   }
-  return 'https://github.com/google/material-design-icons/blob/master/png/alert/error/materialiconsround/48dp/2x/round_error_black_48dp.png'
+  return "https://github.com/google/material-design-icons/blob/master/png/alert/error/materialiconsround/48dp/2x/round_error_black_48dp.png";
 }

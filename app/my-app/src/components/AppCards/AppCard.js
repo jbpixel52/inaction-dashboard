@@ -3,13 +3,10 @@ import React from "react";
 import getIcon from "../../utils/icon_extraction";
 import isOnline from "../../utils/isOnline";
 import "./style.css";
-import { motion } from "framer-motion"
-
-
+import { motion } from "framer-motion";
 
 export default function AppCard(appname, appurl, description, apptype) {
   const Card = (
-
     <div div className="card-base">
       <div className="rows">
         <div className="nav-tab">
@@ -18,12 +15,12 @@ export default function AppCard(appname, appurl, description, apptype) {
         </div>
         <hr></hr>
         <div className="header-row">
-        <img
-            src={getIcon(appname.toLowerCase(),apptype,appurl)}
+          <img
+            src={getIcon(appname.toLowerCase(), apptype, appurl)}
             alt=""
             className="app-icon"
           ></img>
-          <div className="title-body">
+          <a className="title-body" href={appurl}>
             <div className="title-div">
               <p className="app-title">{appname}</p>
               <svg width="1rem" height="1rem">
@@ -38,7 +35,7 @@ export default function AppCard(appname, appurl, description, apptype) {
               </svg>
             </div>
             <p className="app-description">{description}</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
