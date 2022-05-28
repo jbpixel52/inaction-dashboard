@@ -1,0 +1,85 @@
+@font-face {
+  font-family: BluNext;
+  src: url(../../fonts/BluuNext-Bold.otf);
+}
+@font-face {
+  font-family: Sinistre;
+  src: url(../../fonts/Sinistre-StCaroline.woff);
+}
+@font-face {
+  font-family: Brass;
+  src: url(../../fonts/BrassMonoRegular-o2Yz.otf);
+}
+@font-face {
+  font-family: Fog;
+  src: url(../../fonts/FogSans-Re46.otf);
+}
+.columns{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  color: white;
+  font-family: Fog;
+}
+.nav-tab{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-row{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:space-evenly
+  
+}
+.card-base {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 1em;
+  height: fit-content;
+  width: auto;
+}
+.title-body{
+  height: fit-content;
+  width: calc(100%/1.5);
+  align-items: center;
+  text-decoration: none;
+}
+.title-div{
+  display: flex;
+  flex-direction:row ;
+  align-items:flex-start;
+  
+}
+
+.app-title{
+  text-decoration: none;
+  color: white;
+  font-family: Fog;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+p{
+  margin: auto;
+}
+button{
+  margin: auto;
+}
+.app-icon {
+  object-fit: scale-down;
+  width: calc(100%/10);
+
+}
+.app-description{
+  text-decoration: none;
+  color:white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: box;
+  line-height: 1rem;    
+  max-height: 2.2rem;     
+
+}
